@@ -55,7 +55,7 @@ The potential licensing concerns or risks related to Docker are more likely asso
     kubectl expose deployment hello-world --type=LoadBalancer --port=80
     kubectl get svc -w
 
-  [asciicast recorded gif](623914.gif)
+  [asciicast recorded gif](./623914.gif)
 
 ## Conclusions
 
