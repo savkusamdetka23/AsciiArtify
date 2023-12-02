@@ -29,11 +29,16 @@ You can follow next animated .gif to perform installation of k3s cluster with Ar
 	kubectl port-forward svc/argocd-server -n argocd 8080:443&
 	k -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}"|base64 -d;echo
 
+After exeution of the last commandm you need to copy and securely save the password for the ArgoCD admin account.
+
 ## Open installed ArgoCD URL and configure application
 Click to proceed to https://127.0.0.1:8080
-![Alt text](image.png)
 
+![Alt text](image.png)
 
 Use the password from the last executed command to login as **admin**
 
 ![Alt text](image-1.png)
+
+Cleanup environment:
+	k3d cluster delete argo
