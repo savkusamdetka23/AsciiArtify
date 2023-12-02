@@ -40,5 +40,6 @@ Use the password from the last executed command to login as **admin**
 
 ![Alt text](image-1.png)
 
-Cleanup environment:
+To cleanup environment, use next command:
+
 	k3d cluster delete argo
