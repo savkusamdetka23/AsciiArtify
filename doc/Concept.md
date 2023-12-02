@@ -1,3 +1,16 @@
+- [Analysis of local Kubernetes deployment tools and alternatives for AsciiArtify team](#analysis-of-local-kubernetes-deployment-tools-and-alternatives-for-asciiartify-team)
+  - [Introduction](#introduction)
+  - [Features](#features)
+    - [Licensing considerations](#licensing-considerations)
+  - [Advantages and Disadvantages:](#advantages-and-disadvantages)
+  - [Demonstration](#demonstration)
+      - [k3d :](#k3d-)
+  - [Conclusions](#conclusions)
+    - [**minikube:**](#minikube)
+    - [**kind:**](#kind)
+    - [**k3d:**](#k3d)
+    - [**Podman:**](#podman)
+
 # Analysis of local Kubernetes deployment tools and alternatives for AsciiArtify team
 
 **AsciiArtify** is a software product for converting images to ascii-art using Machine Learning.I would like to present a Concept file for the team to advise with tools for the local development and testing system, considering Kubernetes-based options - minikube, kind and k3d (+Podman as alternative).
@@ -56,7 +69,7 @@ The potential licensing concerns or risks related to Docker are more likely asso
     kubectl get svc -w
 
 
-  ![](623914.gif)]
+  ![](img/623914.gif)
 
 ## Conclusions
 
