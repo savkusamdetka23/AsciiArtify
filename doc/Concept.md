@@ -69,7 +69,7 @@ The potential licensing concerns or risks related to Docker are more likely asso
     kubectl get svc -w
 
 
-  ![](img/623914.gif)
+  ![](img/Concept.gif)
 
 ## Conclusions
 

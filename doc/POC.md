@@ -6,7 +6,7 @@
 ## Install and configure ArgoCD
 You can follow next animated .gif to perform installation of k3s cluster with ArgoCD:
 
-![Alt text](img/624466.gif)
+![Alt text](img/PoC.gif)
 
     sudo apt-get update
     sudo apt-get install k3d
@@ -37,11 +37,11 @@ After exeution of the last commandm you need to copy and securely save the passw
 ## Open installed ArgoCD URL and configure application
 Click to proceed to https://127.0.0.1:8080
 
-![Alt text](img/image.png)
+![localhost-ArgoCD](img/localhost-ArgoCD.png)
 
 Use the password from the last executed command to login as **admin**
 
-![Alt text](img/image-1.png)
+![ArgoCD-login-page](img/ArgoCD-login-page.png)
 
 To cleanup environment, use next command:
 
