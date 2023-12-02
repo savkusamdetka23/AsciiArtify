@@ -1,8 +1,8 @@
-#	Minimum viable product (MVP) of 
-  
-  
+#	Minimum viable product (MVP) of the deployed application via ArgoCD
+    
 ## Open installed ArgoCD URL and configure application
 After performing steps from POC document, click on the next URL to proceed to ArgoCD https://127.0.0.1:8080
+
 ![Alt text](image.png)
 
 Use the password from the last executed command from POC document to login as **admin**
@@ -42,18 +42,19 @@ When the application is created, you can click on the **synchronization button**
 
 ## Demo of the application running with ArgoCD
 - Execute next command to forward ports for the application:
-  kubectl port-forward -n demo svc/ambassador 8082:80
+
+      kubectl port-forward -n demo svc/ambassador 8082:80
 
 ![Alt text](image-10.png)
 
 - Open additional terminal window and download the image you would like to test with the next command to save some image locally (you can choose any other link for the image URL):
 
-  wget -O /workspaces/AsciiArtify/k8s.png https://assets-global.website-files.com/63eab091d2e4cb36843a37be/654a6a7bee26c4d8b272459f_Just-in-time-access-Kubernetes-logo.png
+      wget -O /workspaces/AsciiArtify/k8s.png https://assets-global.website-files.com/63eab091d2e4cb36843a37be/654a6a7bee26c4d8b272459f_Just-in-time-access-Kubernetes-logo.png
 
   ![Alt text](image-11.png)
 
 - Use the saved image and then pass it as payload to the service:
-  curl -F 'image=@k8s.png' localhost:8081/img/
+
+      curl -F 'image=@k8s.png' localhost:8081/img/
 
 ![Alt text](image-12.png)
-
