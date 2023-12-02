@@ -1,10 +1,15 @@
-- [Minimum viable product (MVP) of the deployed application via ArgoCD](#minimum-viable-product-mvp-of-the-deployed-application-via-argocd)
-  - [Open installed ArgoCD URL and configure application](#open-installed-argocd-url-and-configure-application)
-  - [Demo of the application running with ArgoCD](#demo-of-the-application-running-with-argocd)
 
 #	Minimum viable product (MVP) of the deployed application via ArgoCD
-    
-## Open installed ArgoCD URL and configure application
+## Table of Contents:
+- [Minimum viable product (MVP) of the deployed application via ArgoCD](#minimum-viable-product-mvp-of-the-deployed-application-via-argocd)
+  - [Table of Contents:](#table-of-contents)
+  - [Open installed ArgoCD URL](#open-installed-argocd-url)
+  - [Configure application](#configure-application)
+  - [Synchronize application](#synchronize-application)
+  - [Demo of the application running with ArgoCD](#demo-of-the-application-running-with-argocd)
+
+
+## Open installed ArgoCD URL
 After performing steps from POC document, click on the next URL to proceed to ArgoCD https://127.0.0.1:8080
 
 ![Alt text](img/localhost-ArgoCD.png)
@@ -12,6 +17,8 @@ After performing steps from POC document, click on the next URL to proceed to Ar
 Use the password from the last executed command from POC document to login as **admin**
 
 ![Alt text](img/ArgoCD-login-page.png)
+
+## Configure application
 
 On the home page click on **"Create applciation"**
 
@@ -30,6 +37,8 @@ On the home page click on **"Create applciation"**
 
 ![Alt text](img/Argocd-app-creation2.png)
 
+## Synchronize application
+
 When the application is created, you can click on the **synchronization button** on the home page  
 
 ![Alt text](img/Argocd-app-sync.png)
@@ -38,7 +47,7 @@ When the application is created, you can click on the **synchronization button**
 
 ![Alt text](img/Argocd-app-sync-progress.png)
 
-  You can click on the application itself to see more details about the application deployment
+You can click on the application itself to see more details about the application deployment
  
 ![Alt text](img/Argocd-app-sync-progress2.png)
 
@@ -49,7 +58,7 @@ When the application is created, you can click on the **synchronization button**
 
       kubectl port-forward -n demo svc/ambassador 8082:80
 
-![Alt text](img/demo1.png)
+![Alt text](img/demo.png)
 
 - Open additional terminal window and download the image you would like to test with the next command to save some image locally (you can choose any other link for the image URL):
 

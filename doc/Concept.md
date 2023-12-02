@@ -1,17 +1,18 @@
+# Analysis of local Kubernetes deployment tools and alternatives for AsciiArtify team
+## Table of Contents:
 - [Analysis of local Kubernetes deployment tools and alternatives for AsciiArtify team](#analysis-of-local-kubernetes-deployment-tools-and-alternatives-for-asciiartify-team)
+  - [Table of Contents:](#table-of-contents)
   - [Introduction](#introduction)
   - [Features](#features)
     - [Licensing considerations](#licensing-considerations)
   - [Advantages and Disadvantages:](#advantages-and-disadvantages)
   - [Demonstration](#demonstration)
-      - [k3d :](#k3d-)
+      - [k3d:](#k3d)
   - [Conclusions](#conclusions)
     - [**minikube:**](#minikube)
     - [**kind:**](#kind)
-    - [**k3d:**](#k3d)
+    - [**k3d:**](#k3d-1)
     - [**Podman:**](#podman)
-
-# Analysis of local Kubernetes deployment tools and alternatives for AsciiArtify team
 
 **AsciiArtify** is a software product for converting images to ascii-art using Machine Learning.I would like to present a Concept file for the team to advise with tools for the local development and testing system, considering Kubernetes-based options - minikube, kind and k3d (+Podman as alternative).
 
@@ -39,9 +40,9 @@
 The Docker Engine, which includes the Docker daemon, client, and container runtime, is open source and governed by the Apache License 2.0. However, Docker also offers a commercial product called Docker Enterprise that includes additional features and support.
 
 The potential licensing concerns or risks related to Docker are more likely associated with the use of Docker Enterprise or other commercial Docker products rather than the open-source Docker Engine. Here are some considerations:
- 1.  **minikube :** it can use various container runtimes, including Docker. Docker Desktop, is free for personal use like local development but may have licensing considerations for business or enterprise use. We need to be  sure to review Docker's licensing terms if we decide to use Docker Desktop in a business context.
+ 1.  **minikube:** it can use various container runtimes, including Docker. Docker Desktop, is free for personal use like local development but may have licensing considerations for business or enterprise use. We need to be  sure to review Docker's licensing terms if we decide to use Docker Desktop in a business context.
     
-2.  **kind :** it just interacts with the Kubernetes API and doesn't involve Docker in any way that triggers additional licensing concerns.
+2.  **kind:** it just interacts with the Kubernetes API and doesn't involve Docker in any way that triggers additional licensing concerns.
     
 3.  **k3d:** is designed to work with lightweight Kubernetes clusters using K3s, and do not directly rely on Docker licensing.
     
@@ -59,7 +60,7 @@ The potential licensing concerns or risks related to Docker are more likely asso
 
 ##  Demonstration
 
-#### k3d :
+#### k3d:
 Сonsidering the speed, ease of use and low entry threshold, it is recommended to use k3d. Let me shot you how fast you can locally deploy an app by using k3d:
 
     k3d cluster create AsciiArtify
