@@ -6,8 +6,8 @@
   - [Open installed ArgoCD URL](#open-installed-argocd-url)
   - [Configure application](#configure-application)
   - [Synchronize application](#synchronize-application)
+  - [Enable auto synchronization:](#enable-auto-synchronization)
   - [Demo of the application running with ArgoCD](#demo-of-the-application-running-with-argocd)
-
 
 ## Open installed ArgoCD URL
 After performing steps from POC document, click on the next URL to proceed to ArgoCD https://127.0.0.1:8080
@@ -52,6 +52,24 @@ You can click on the application itself to see more details about the applicatio
 ![Alt text](img/Argocd-app-sync-progress2.png)
 
 ![Alt text](img/Argocd-app-successful-sync.png)
+
+## Enable auto synchronization:
+
+Click on the applicaiton on the home page and then on the button **Details**:
+
+![Alt text](img/ArgoCD-app-details.png)
+
+Then click on **Edit**
+
+![Alt text](img/ArgoCD-app-edit.png)
+
+Scroll down to the **SYNC POLICY** and click on the **"Enable auto-sync"**
+
+![Alt text](img/ArgoCD-enable-auto-sync.png)
+
+![Alt text](img/ArgoCD-enable-auto-sync2.png)
+
+After those actions the app will automatically trigger sycnhronization when any changes will be applied in GitHub repo.
 
 ## Demo of the application running with ArgoCD
 - Execute next command to forward ports for the application:
